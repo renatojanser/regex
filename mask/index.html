@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS Mask</title>
+    <style>
+        .center {
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 15px;
+            margin: 0 auto;
+        }
+        .group-input + .group-input{
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #666666;
+            margin-bottom: 2px;
+        }
+        input {
+            width: 100%;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid #666666;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="group-input">
+            <label for="cpf">CPF: 000.000.000-00</label>
+            <input type="text" data-info="cpf">
+        </div>
+        <div class="group-input">
+            <label for="cnpj">CNPJ: 00.000.000/0000-00</label>
+            <input type="text" data-info="cnpj">
+        </div>
+        <div class="group-input">
+            <label for="telefone">Telefone: (00) 00000-0000</label>
+            <input type="text" data-info="telefone">
+        </div>
+        <div class="group-input">
+            <label for="cep">CEF: 00000-000</label>
+            <input type="text" data-info="cep">
+        </div>
+        <div class="group-input">
+            <label for="pis">PIS: 000.00000.00-0</label>
+            <input type="text" data-info="pis">
+        </div>
+        <div class="group-input">
+            <label for="data">DATA: 00/00/0000</label>
+            <input type="text" data-info="data">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
